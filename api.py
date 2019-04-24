@@ -1,11 +1,11 @@
 import os, datetime, time, pprint, pymongo, hashlib, functools
-from flakechain import wallet, daemon, transaction
-from flakechain.backends import jsonrpc
-from flakechain.numbers import from_atomic
+from monero import wallet, daemon, transaction
+from monero.backends import jsonrpc
+from monero.numbers import from_atomic
 
 
 __VERSION__ = (4, 0, 1)
-__DEFAULT_DATABASE__ = "flakechain"
+__DEFAULT_DATABASE__ = "pyrexcoin"
 __DEFAULT_STATE__ = {
     "_id": None, # not persisted yet
     "height": 0
