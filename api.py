@@ -18,16 +18,16 @@ def to_payment_id(value, size=16):
 
 def wallet_factory():
     return wallet.Wallet(jsonrpc.JSONRPCWallet(
-        port=int(os.environ["MONERO_WALLET_PORT"]),     
-        user=os.environ["MONERO_WALLET_USER"],
-        password=os.environ["MONERO_WALLET_PASS"],
+        port=int(os.environ["PYREXCOIN_WALLET_PORT"]),     
+        user=os.environ["PYREXCOIN_WALLET_USER"],
+        password=os.environ["PYREXCOIN_WALLET_PASS"],
     ))
 
 
 def daemon_factory():
     return daemon.Daemon(jsonrpc.JSONRPCDaemon(
-        host=os.environ["MONERO_DAEMON_HOST"],
-        port=int(os.environ["MONERO_DAEMON_PORT"]),
+        host=os.environ["PYREXCOIN_DAEMON_HOST"],
+        port=int(os.environ["PYREXCOIN_DAEMON_PORT"]),
     ))
 
 

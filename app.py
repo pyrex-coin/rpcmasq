@@ -15,7 +15,7 @@ def getinfo():
     logger.error("err")
     return {
         "name": "RPC Masq v{}.{}.{}".format(*api.__VERSION__),
-        "plugins": ["monero", ],
+        "plugins": ["pyrexcoin", ],
     }
 
 
